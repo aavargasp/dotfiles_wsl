@@ -1,0 +1,19 @@
+[core]
+	sshCommand = ssh.exe
+
+[user]
+  name = Andres Vargas
+  email = avargasp87@gmail.com
+  signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIFSB94sfW1YFM093USLJFOS9PLJhZN2KSMfyGbPg3kQd
+
+[commit]
+  gpgsign = true
+
+[gpg]
+  format = ssh
+
+[gpg "ssh"]
+  program = "/mnt/c/Users/Andres/AppData/Local/1Password/app/8/op-ssh-sign-wsl"
+
+[includeif "gitdir:~/develop/cencosud/"]
+  path = ~/develop/cencosud/.gitconfig
